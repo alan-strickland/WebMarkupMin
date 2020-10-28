@@ -37,5 +37,15 @@ namespace WebMarkupMin.AspNet.Common
 			get;
 			set;
 		}
+
+		/// <summary>
+		/// Gets or sets a list of supported HTTP status codes
+		/// </summary>
+		ISet<int> SupportedHttpStatusCodes
+		{
+			get;
+			set;
+		}
+
 	}
 }

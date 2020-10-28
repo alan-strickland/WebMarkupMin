@@ -28,7 +28,6 @@ namespace WebMarkupMin.AspNet.Common
 			set;
 		}
 
-
 		/// <summary>
 		/// Creates a instance of compressor
 		/// </summary>
@@ -45,5 +44,6 @@ namespace WebMarkupMin.AspNet.Common
 		/// <param name="compressor">Instance of compressor</param>
 		/// <returns>true if the compressor was created; otherwise, false</returns>
 		bool TryCreateCompressor(string acceptEncoding, out ICompressor compressor);
+
 	}
 }

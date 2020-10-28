@@ -1,6 +1,10 @@
 Change log
 ==========
 
+## v2.8.13 - October 10, 2020 - CUSTOMISED
+ * In `IMarkupMinificationManager` interface, `MarkupMinificationOptionsBase` class, `IHttpCompressionManager` interface and `HttpCompressionOptions` class was added a new property - `SupportedHttpStatusCodes` (default `200`)
+ * In WebMarkupMin.AspNet4.Mvc and WebMarkupMin.AspNet4.WebForms now, by default, only the `200` requests are minified and compressed (this behavior can be changed by using the `SupportedHttpStatusCodes` property)
+
 ## v2.8.13 - October 10, 2020
  * In WebMarkupMin.NUglify added support of the NUglify version 1.9.7
 

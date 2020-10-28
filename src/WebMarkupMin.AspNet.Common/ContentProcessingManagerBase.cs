@@ -38,6 +38,14 @@ namespace WebMarkupMin.AspNet.Common
 			set;
 		}
 
+		/// <summary>
+		/// Gets or sets a list of supported HTTP status codes
+		/// </summary>
+		public ISet<int> SupportedHttpStatusCodes
+		{
+			get;
+			set;
+		}
 
 		/// <summary>
 		/// Constructs a instance of content processing manager
@@ -47,6 +55,7 @@ namespace WebMarkupMin.AspNet.Common
 			SupportedHttpMethods = new HashSet<string> { "GET" };
 			IncludedPages = new List<IUrlMatcher>();
 			ExcludedPages = new List<IUrlMatcher>();
+			SupportedHttpStatusCodes = new HashSet<int> { 200 };
 		}
 	}
 }

@@ -30,6 +30,7 @@ namespace WebMarkupMin.AspNetCore3
 			HtmlMinificationOptions minificationOptions = options.Value;
 			MinificationSettings = minificationOptions.MinificationSettings;
 			SupportedHttpMethods = minificationOptions.SupportedHttpMethods;
+			SupportedHttpStatusCodes = minificationOptions.SupportedHttpStatusCodes;
 			SupportedMediaTypes = minificationOptions.SupportedMediaTypes;
 			IncludedPages = minificationOptions.IncludedPages;
 			ExcludedPages = minificationOptions.ExcludedPages;

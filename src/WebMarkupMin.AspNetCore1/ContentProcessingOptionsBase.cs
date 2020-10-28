@@ -27,6 +27,15 @@ namespace WebMarkupMin.AspNetCore3
 		}
 
 		/// <summary>
+		/// Gets or sets a list of supported HTTP status codes
+		/// </summary>
+		public ISet<int> SupportedHttpStatusCodes
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// Gets or sets a list of URL matchers, which is used to include pages to processing
 		/// by markup minifier or compressor
 		/// </summary>
@@ -53,6 +62,7 @@ namespace WebMarkupMin.AspNetCore3
 		protected ContentProcessingOptionsBase()
 		{
 			SupportedHttpMethods = new HashSet<string> { "GET" };
+			SupportedHttpStatusCodes = new HashSet<int> { 200 };
 			IncludedPages = new List<IUrlMatcher>();
 			ExcludedPages = new List<IUrlMatcher>();
 		}
